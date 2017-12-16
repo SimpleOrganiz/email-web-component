@@ -2,10 +2,33 @@
   "schema_version": "1.0.0",
   "elements": [
     {
-      "description": "`email-web-app` Desc",
-      "summary": "ShortDescription.",
+      "description": "`email-web-app` Simple WebComponent",
+      "summary": "Show me Simple WebComponent.",
       "path": "email-web-app.html",
-      "properties": [],
+      "properties": [
+        {
+          "name": "data",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 37,
+              "column": 12
+            },
+            "end": {
+              "line": 41,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true
+            }
+          },
+          "defaultValue": "\"\""
+        }
+      ],
       "methods": [
         {
           "name": "ready",
@@ -13,11 +36,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 45,
+              "line": 49,
               "column": 6
             },
             "end": {
-              "line": 47,
+              "line": 51,
               "column": 7
             }
           },
@@ -39,15 +62,39 @@
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 53,
           "column": 5
         }
       },
       "privacy": "public",
       "superclass": "HTMLElement",
       "name": "EmailWebApp",
-      "attributes": [],
-      "events": [],
+      "attributes": [
+        {
+          "name": "data",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 37,
+              "column": 12
+            },
+            "end": {
+              "line": 41,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "data-changed",
+          "description": "Fired when the `data` property changes.",
+          "metadata": {}
+        }
+      ],
       "styling": {
         "cssVariables": [],
         "selectors": []

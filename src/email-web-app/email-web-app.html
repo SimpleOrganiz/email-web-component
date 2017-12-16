@@ -8,7 +8,7 @@
       }
     </style>
 
-    Simple WebComponent
+    [[data]]
 
   </template>
 
@@ -35,7 +35,11 @@
        */
       static get properties() {
         return {
-          
+            data: {
+              type: String,
+              value: "",
+              notify: true
+            }
         };
       }
 
